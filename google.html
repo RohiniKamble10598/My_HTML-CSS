@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google web page</title>
+</head>
+<style>
+   
+
+    #nav {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+
+    a {
+        margin-right: 20px;
+    }
+
+    a.topimage {
+        width: 25px;
+        height: 25px;
+        background-color: red;
+        border-radius: 10px;
+    }
+
+    #middle {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo {
+        margin-top: 120px;
+        text-align: center;
+    }
+
+    #searchbar_container {
+        text-align: center;
+        margin: 20px;
+        
+
+    }
+    
+    
+
+    #search_bar {
+        padding: 12px;
+        outline: 0;
+        width: 550px;
+       
+        border-radius: 20px;
+        border: 1px solid rgb(233, 226, 226);
+    }
+    #search_bar:hover{
+        box-shadow: 0 0 10px 2px rgb(240, 235, 235);
+    }
+
+    #button {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .buttons:hover{
+        box-shadow:0 0 10px 2px rgb(247, 247, 245);
+    }
+    .buttons{
+        margin: 10px;
+        padding:4px 4px;
+        cursor: pointer;
+        background-color: rgb(245, 242, 242);
+        border-radius: 3px;
+
+    }
+    #links{
+        text-align: center;
+        margin-top: 20px;
+        letter-spacing:normal;
+     }
+    
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+</style>
+
+
+<body>
+    <div id="nav">
+        <a class="toplink">Gmail</a>
+        <a class="toplink">Image</a>
+        <a class="topimage"></a>
+    </div>
+    <div id="middle">
+        <div id="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" />
+        </div>
+    </div>
+    <div id="searchbar_container">
+         
+        <input id="search_bar" type="text">
+        
+    </div>
+    <div id="button">
+        <div class="buttons">Google Search</div>
+    
+        <div class="buttons">I'm Feeling Lucky</div>
+    </div>
+    <div id="links">Google is offered in :       
+        <a href="">हिन्दी</a><a href="">বাংলা</a>
+        <a href=""> मराठी</a>
+        <a href="">தமிழ்</a>
+        <a href="">ગુજરાતી</a>
+        <a href="">ಕನ್ನಡ</a>
+        <a href="">മലയാളം</a>
+        <a href="">ਪੰਜਾਬੀ</a>
+        
+    </div>
+   
+</body>
+
+</html>
