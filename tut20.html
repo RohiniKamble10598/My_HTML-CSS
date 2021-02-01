@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0px;
+            padding:0px;
+
+        }
+     .container{
+         background-color: rosybrown;
+         border:2px solid rgb(53, 15, 15);
+          /* we can get margine/padding form top bottom right left like this */
+          /* padding-left: 23px;
+          padding-bottom: 20px; 
+          padding-top: 25px;
+           */
+           /* margin-top: 3px;
+           margin-bottom: 5px;
+           margin-right: 5px;
+           margin-left:30p;x */
+          /*padding:20px 25px 20px 34px;/*padding/margin: top right bottom left*/
+          /*padding:x(top/bottom) y(left/right)*/
+          padding:34px 19px;
+          border-radius:23px;
+          margin: 35px 43px;
+          width:533px;
+     }
+
+body{
+    background-color: #331717;
+}
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam impedit repudiandae non nulla?
+            Eligendi nemo nobis in, voluptatem veniam exercitationem ut nihil ipsam.</p>
+    </div>
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id="Second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam impedit repudiandae non nulla?
+            Eligendi nemo nobis in, voluptatem veniam exercitationem ut nihil ipsam.</p>
+    </div>
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id="Third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam impedit repudiandae non nulla?
+            Eligendi nemo nobis in, voluptatem veniam exercitationem ut nihil ipsam.</p>
+    </div>
+</body>
+
+</html>

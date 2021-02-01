@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and text shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+
+    }
+
+    .card {
+        padding: 23px 12px;
+        /* border: 2px solid red; */
+        margin:23px 12px;
+        background-color: aquamarine;
+        /* box shadow at the down side 
+        syntax= box-shadow:offset-x offset-y color*/
+        /* box-shadow:12px 13px rgb(151, 150, 150); */
+
+        /* box shadow at the upper side
+        syntax= box-shadow:offset-x offset-y in negative  */
+        /* box-shadow: -12px -13px rgb(143, 143, 153); */
+
+        /* blur Radius -to blur the shadow
+        syntax= box-shadow:offset-x offset-y blur radius color*/
+        /* box-shadow: 5px 7px 10px rgb(199, 76, 20); */
+
+        /* it will spread the shadow around the fig 
+           syntax= box-shadow:offset-x offset-y blur radius  spread radius color*/
+        /* box-shadow: 5px 7px 10px 10px rgba(199, 76, 20); */
+ 
+       /* it will spread the shadow around the fig 
+           syntax= box-shadow:offset-x offset-y blur radius  spread radius color(last 0.5 is alfa which is used to darker the shadow how much*/ 
+        /* box-shadow: 5px 7px 10px 10px rgba(199, 76, 20,0.5);
+         */
+         /* box-shadow: inset 8px 9px  rgb(100, 69, 58); */
+
+         /* box shadow for multiple shadow */
+         box-shadow: 5px 6px red, 8px 10px yellow;
+
+    }
+    h2{
+        /* text-shadow:2px 3px red; */
+        text-shadow: 2px 3px 5px rgb(184, 166, 166);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This is Html Course</h2>
+            <p>I started this course for the completion doesnt mean that i am absence in the class all time.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptas adipisci? Aspernatur deserunt quidem hic, odit sapiente officia? Eveniet reiciendis doloremque a id corrupti necessitatibus suscipit doloribus totam? Explicabo culpa distinctio eveniet tempore suscipit.</p>
+
+        </div>
+        <div class="card" id="card2">
+            <h2>This c++ Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptas adipisci? Aspernatur deserunt quidem hic, odit sapiente officia? Eveniet reiciendis doloremque a id corrupti necessitatibus suscipit doloribus totam? Explicabo culpa distinctio eveniet tempore suscipit.</p>
+
+        </div>
+        <div class="card" id="card3">
+            <h2>card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptas adipisci? Aspernatur deserunt quidem hic, odit sapiente officia? Eveniet reiciendis doloremque a id corrupti necessitatibus suscipit doloribus totam? Explicabo culpa distinctio eveniet tempore suscipit.</p>
+
+        </div>
+        <div class="card" id="card4">
+            <h2>card4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptas adipisci? Aspernatur deserunt quidem hic, odit sapiente officia? Eveniet reiciendis doloremque a id corrupti necessitatibus suscipit doloribus totam? Explicabo culpa distinctio eveniet tempore suscipit.</p>
+
+        </div>
+    </div>
+</body>
+
+</html>

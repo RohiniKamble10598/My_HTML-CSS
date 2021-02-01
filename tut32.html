@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and child pseudo selectors</title>
+</head>
+<style>
+.container{
+    display: block;
+    width:233px;
+    margin:auto;
+}
+input{
+    display: block;
+}
+input[type='text']
+{
+    padding: 20px;
+    border: 2px solid red;
+}
+a[target]
+{
+    font-size:56px;
+    color: black;
+}
+a[target='_self']
+{
+ color: blue;
+ font-size: 70px;
+}
+input[type="password"]
+{
+    border:2px solid blue;
+    padding:56px;
+}
+/* it will apply css on 4th child */
+/* li:nth-child(4)
+{
+    font-weight: bold;
+    color:crimson
+
+} */
+li:nth-child(2n+0)  /*for n=0,1,2,3.....*/
+{
+    color:darkblue;
+    font-weight: bold;
+}
+/* for odd child */
+li:nth-child(odd){
+    background-color: darkcyan;
+}
+/* for even child */
+li:nth-child(even){
+    background-color: deeppink;
+}
+</style>
+<body>
+    <div class="container">
+        <h1><a href="http://Google.com" target=_blank>Go to Google</a></h1>
+        <h1><a href="http://Facebook.com" target=_self>Go to Facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="enter your name">
+            <input type="password" placeholder="Password">
+            <input type="Submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">item1</li>
+            <li class="item" id="item2">item2</li>
+            <li class="item" id="item3">item3</li>
+            <li class="item" id="item4">item4</li>
+            <li class="item" id="item5">item5</li>
+            <li class="item" id="item6">item6</li>
+            <li class="item" id="item7">item7</li>
+            <li class="item" id="item8">item8</li>
+            <li class="item" id="item9">item9</li>
+            <li class="item" id="item10">item10</li>
+        </ul>
+    </div>
+</body>
+</html>
